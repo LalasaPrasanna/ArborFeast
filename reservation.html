@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Table | Aera Arbor Feast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+</nav>
+
+  <header>
+    <h1>Reserve Your Table</h1>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </header>
+
+  <main>
+    <section>
+      <form id="booking-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="guests">Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+
+        <button type="submit">Reserve Now</button>
+      </form>
+
+      <!-- Confirmation message -->
+      <p id="confirmation-message" style="display: none; color: green; margin-top: 20px; font-weight: bold;">
+        Thank you! Your table has been reserved.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Aera Arbor Feast
+  </footer>
+
+  <script>
+    const form = document.getElementById('booking-form');
+    const message = document.getElementById('confirmation-message');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      message.style.display = 'block';
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

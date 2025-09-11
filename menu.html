@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu | Arbor Feast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="reservation.html">Reserve</a>
+  </nav>
+
+  <header>
+    <h1>Our Vegetarian Menu</h1>
+    <p>Curated plant-based dishes for mindful indulgence.</p>
+  </header>
+
+  <!-- Filter Controls -->
+  <div class="filter-controls">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="bowls">Bowls</button>
+    <button class="filter-btn" data-category="pasta">Pasta</button>
+    <button class="filter-btn" data-category="platters">Platters</button>
+    <button class="filter-btn" data-category="drinks">Drinks</button>
+  </div>
+
+  <section class="menu-grid">
+  <!-- Bowls -->
+  <div class="menu-card" data-category="bowls">
+    <img src="images/green-goddess.jpg" alt="Green Goddess Bowl" />
+    <h3>Green Goddess Bowl</h3>
+    <p>Quinoa, spinach, chickpeas, veggies.</p>
+  </div>
+  <div class="menu-card" data-category="bowls">
+    <img src="images/mediterranean-bowl.jpg" alt="Mediterranean Bowl" />
+    <h3>Mediterranean Bowl</h3>
+    <p>Avacado, roasted peppers, olives, chickpeas, lemon vinaigrette.</p>
+  </div>
+  <div class="menu-card" data-category="bowls">
+    <img src="images/spicy-tofu-bowl.jpg" alt="Spicy Tofu Bowl" />
+    <h3>Spicy Tofu Bowl</h3>
+    <p>Tofu, brown rice, pepper, spicy peanut sauce.</p>
+  </div>
+
+  <!-- Pasta -->
+  <div class="menu-card" data-category="pasta">
+    <img src="images/pasta.jpg" alt="Sun-Dried Tomato Pasta" />
+    <h3>Sun-Dried Tomato Pasta</h3>
+    <p>Gluten-free pasta with olives.</p>
+  </div>
+  <div class="menu-card" data-category="pasta">
+    <img src="images/creamy-mushroom-pasta.jpg" alt="Creamy Mushroom Pasta" />
+    <h3>Creamy Mushroom Pasta</h3>
+    <p>Cashew cream sauce with wild mushrooms and sphagetti.</p>
+  </div>
+  <div class="menu-card" data-category="pasta">
+    <img src="images/vegan-bolognese.jpg" alt="Vegan Bolognese" />
+    <h3>Vegan Bolognese</h3>
+    <p>Lentil tomato sauce over whole wheat spaghetti.</p>
+  </div>
+
+  <!-- Platters -->
+  <div class="menu-card" data-category="platters">
+    <img src="images/root-veg.jpg" alt="Roasted Root Veg Platter" />
+    <h3>Roasted Root Veg Platter</h3>
+    <p>Rosemary roasted vegetables with hummus.</p>
+  </div>
+  <div class="menu-card" data-category="platters">
+    <img src="images/antipasto-platter.jpg" alt="Antipasto Platter" />
+    <h3>Antipasto Platter</h3>
+    <p>Grilled veggies, olives, vegan cheese, artisan bread.</p>
+  </div>
+  <div class="menu-card" data-category="platters">
+    <img src="images/summer-veggie-platter.jpg" alt="Summer Veggie Platter" />
+    <h3>Summer Veggie Platter</h3>
+    <p>Grilled zucchini, eggplant, bell peppers with basil dip.</p>
+  </div>
+
+  <!-- Drinks -->
+  <div class="menu-card" data-category="drinks">
+    <img src="images/berry-bliss.jpg" alt="Berry Bliss Smoothie" />
+    <h3>Berry Bliss Smoothie</h3>
+    <p>Mixed berries, bananas, almond milk, maple syrup.</p>
+  </div>
+  <div class="menu-card" data-category="drinks">
+    <img src="images/matcha-latte.jpg" alt="Matcha Latte" />
+    <h3>Matcha Latte</h3>
+    <p>Organic matcha with steamed oat milk and a hint of vanilla.</p>
+  </div>
+  <div class="menu-card" data-category="drinks">
+    <img src="images/cucumber-mint-water.jpg" alt="Cucumber Mint Water" />
+    <h3>Cucumber Mint Water</h3>
+    <p>Refreshing cucumber slices and fresh mint in chilled water.</p>
+  </div>
+</section>
+
+
+  <footer>
+    &copy; 2025 Arbor Feast. Every bite rooted in nature.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
